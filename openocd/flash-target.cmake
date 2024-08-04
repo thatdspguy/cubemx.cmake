@@ -15,7 +15,7 @@ function(add_erase_and_reset)
     # Mass erase chip                   #
     #####################################
     add_custom_target(erase
-        openocd ${CMX_DEBUGGER_OPT} ${OPENOCD_CFG_OPT} -c "init" -c "halt" -c "stm32l4x mass_erase 0" -c "exit"
+        openocd ${CMX_DEBUGGER_OPT} ${OPENOCD_CFG_OPT} -c "init" -c "halt" -c "stm32h7x mass_erase 0" -c "exit"
         COMMENT "Mass erasing chip"
     )
 endfunction()
