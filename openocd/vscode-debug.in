@@ -9,7 +9,7 @@
             "servertype": "openocd",
             "serverArgs": [@OPENOCD_OPT@],
             "configFiles": ["@OPENOCD_CFG@"],
-            "svdFile": "STM32H750x.svd",
+            "svdFile": "${workspaceRoot}/STM32H750x.svd",
         }
     ]
 }
